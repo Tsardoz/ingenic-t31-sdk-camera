@@ -64,7 +64,9 @@ Whilst GPT4 suggested I look at these version.h files, it has nothing to do what
 My goal is to write c/c++ code to use these libraries to access the camera.  
 It seems to me that I cannot get buildroot to access these provided compilers as their kernel headers are inconsistent with the actual kernel 3.10.14 and throws the above errors. 
 So unless I have made a mistake in my openipc config file (entirely possible), I think my best approach might be to use the compiler with headers closest 
-to 3.10.14, which is 4.7.2 (headers 3.5.4). I can tell openipc to make its own compiler and not use an external one, using uclibc. I presume I could not actually use this compiler built by buildroot/openipc to access the libraries given in the SDK (maybe I can?).  
+to 3.10.14, which is 4.7.2 (headers 3.5.4). I can tell openipc to make its own compiler and not use an external one, using uclibc. I presume I could not actually use this compiler built by buildroot/openipc to access the libraries given in the SDK (maybe I can?). 
+
+Can I just tell buildroot/openipc to use kernel headers 4.2.0 or 3.5.4 and forget 3.10.14? Then make one of these kernels and not 3.10.14?  
 
 gtxaspec used static libraries and chatgpt4 suggested I do the same thing for best compatibility.  
 
