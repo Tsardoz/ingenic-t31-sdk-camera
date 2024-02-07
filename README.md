@@ -67,6 +67,7 @@ So unless I have made a mistake in my openipc config file (entirely possible), I
 to 3.10.14, which is 4.7.2 (headers 3.5.4). I can tell openipc to make its own compiler and not use an external one, using uclibc. I presume I could not actually use this compiler built by buildroot/openipc to access the libraries given in the SDK (maybe I can?). 
 
 Can I just tell buildroot/openipc to use kernel headers 4.2.0 or 3.5.4 and forget 3.10.14? Then make one of these kernels and not 3.10.14?  
+(preferably 4.2.0 as it is more recent)  
 
 gtxaspec used static libraries and chatgpt4 suggested I do the same thing for best compatibility.  
 
